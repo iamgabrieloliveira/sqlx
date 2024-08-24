@@ -6,6 +6,7 @@ use crate::{PgArgumentBuffer, PgHasArrayType, PgTypeInfo, PgValueFormat, PgValue
 use sqlx_core::bytes::Buf;
 use sqlx_core::Error;
 use std::str::FromStr;
+use std::mem::size_of;
 
 const BYTE_WIDTH: usize = 8;
 
